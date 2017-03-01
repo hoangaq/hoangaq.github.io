@@ -1,0 +1,90 @@
+<!DOCTYPE html> 
+<html lang="en">
+
+<head>
+<meta charset="utf-8">
+    
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+<script type="text/javascript" src="js/jquery-3.1.1.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="css/bootstrap.css">
+<link rel="stylesheet" href="css/style.css">
+<title>QA Photography</title>
+    
+</head>
+
+<body>
+    <div class="container-fluid">
+        <header class="navbar">
+            <nav class="navbar navbar-default">
+              <div class="container-fluid">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                  </button>
+                  <a class="navbar-brand" href="#">QA Photography</a>
+                </div>
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                  <ul class="nav navbar-nav">
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="resume.html">Resume</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                  </ul>
+                  <form class="navbar-form navbar-right">
+                    <div class="form-group">
+                      <input type="text" class="form-control" placeholder="Search">
+                    </div>
+                    <button type="submit" class="btn btn-default">Go</button>
+                  </form>
+
+                </div><!-- /.navbar-collapse -->
+              </div><!-- /.container-fluid -->
+            </nav>
+        </header>
+        
+        <div class="img-responsive row text-center">
+            <div class="col-md-4">
+                <img src="images/IMG_0445-1-1.jpg" data-toggle="modal" data-target="#image1">
+                <h3>Capitol Hill</h3>
+            </div>
+            <div class="col-md-4">
+                <img src="images/IMG_0452-1-2.jpg">
+                <h3>Capitol Hill</h3>
+            </div>
+            <div class="col-md-4">
+                <img src="images/IMG_0825-1.jpg">
+                <h3>Self Portrait</h3>
+            </div>
+        
+        </div>
+        
+        <div class="modal fade" id="image1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title" id="myModalLabel">Caption</h4>
+                    </div>
+                    <div class="modal-body">
+                        <img src="images/IMG_0445-1-1.jpg" class="img-responsive">
+                        This was my first project in this class. I learned a lot about HTML and CSS.
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    <footer>&copy2017 My Site</footer>
+</body>
+
+</html>
