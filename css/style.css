@@ -9,7 +9,7 @@ body {
     font-weight: 300;
     margin: 0;
     padding: 0;
-    margin-bottom: 60px;
+    margin-bottom: 30px;
 }
 
 header {
@@ -28,7 +28,7 @@ header h1 {
 img {
     max-width: 100%;
     height: auto;
-    margin: 30px 30px;
+    margin: 10px 10px;
 }
 
 
@@ -53,6 +53,10 @@ nav ul li a {
     text-decoration: none;
     transition: 0.3s;
     font-size: 17px;
+}
+
+.sidebar {
+    padding: 10px 0px;
 }
 
 li a:hover {
@@ -84,30 +88,28 @@ p {
 
 .footer {
     background: #32efdc;
-    padding: 10px 0;
+    padding: 5px 0 5px 0;
     position: absolute;
     bottom:0;
     width:100%;
-    height:60px;
+    height:40px;
 }
 
 .footer a {
     color: #6a4fad;
     font-size: 20px;
-    padding: 10px;s
     -webkit-transition: all .5s ease;
     transition: all .5s ease;
 }
 
+a {
+    padding: 5px 5px;
+}
 
 .footer a:hover {
-    color: white;
+    color: #3bf0f9;
     -webkit-transition: all .5s ease;
     transition: all .5s ease;
-}
-
-#footer-mes {
-    color: #2471a0;
 }
 
 #contact{
@@ -118,4 +120,9 @@ p {
 
 textarea.form-control{
     height:100px;
+}
+    
+#img01modal {
+    width: 80%;
+    height: 80%;
 }
