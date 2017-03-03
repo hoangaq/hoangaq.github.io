@@ -14,8 +14,8 @@ body {
 
 header {
     margin: 0;
-    background-image: url(IMG_0452-1-2.jpg);
-    color: white;
+    //background-image: url(IMG_0452-1-2.jpg);
+    background-color: #33747F;
     padding: 15px 15px 0 0; 
 }
 
@@ -31,6 +31,10 @@ img {
     margin: 10px 10px;
 }
 
+/* background color for navbar inside the header */
+.navbar-default {
+    background-color: aqua;
+}
 
 nav ul {
     list-style-type: none;
@@ -44,10 +48,10 @@ nav ul li {
     display: inline-block;
 }
 
-
 nav ul li a {
     display: inline-block;
     color: #f2f2f2;
+    background-color: aqua;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
@@ -60,8 +64,8 @@ nav ul li a {
 }
 
 li a:hover {
-    background-color: #555;
-    color: white;
+    background-color: floralwhite;
+    color: palevioletred;
 }
 
 .active {
@@ -87,7 +91,7 @@ p {
 
 
 .footer {
-    background: #32efdc;
+    background: #33747F;
     padding: 5px 0 5px 0;
     position: absolute;
     bottom:0;
@@ -97,7 +101,7 @@ p {
 }
 
 .footer a {
-    color: #6a4fad;
+    color: floralwhite;
     font-size: 20px;
     -webkit-transition: all .5s ease;
     transition: all .5s ease;
@@ -108,7 +112,7 @@ a {
 }
 
 .footer a:hover {
-    color: #3bf0f9;
+    color: #66BDCC;
     -webkit-transition: all .5s ease;
     transition: all .5s ease;
 }
@@ -126,4 +130,8 @@ textarea.form-control{
 #img01modal {
     width: 80%;
     height: 80%;
+}
+
+#footer_message {
+    color: #66BDCC;
 }
