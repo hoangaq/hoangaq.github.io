@@ -30,6 +30,7 @@ img {
     max-width: 100%;
     height: auto;
     margin: 10px 10px;
+    float: left;
 }
 
 /* background color for navbar inside the header */
