@@ -1,0 +1,150 @@
+<html>
+  <head><title>Study Notes Generator</title>
+    
+    <meta charset="utf-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/font-awesome.css">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+          <header class="navbar">
+            <nav class="navbar navbar-default">
+              <div class="container-fluid">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                  </button>
+                  <a class="navbar-brand" href="index.html">Home</a>
+                </div>
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                  <ul class="nav navbar-nav">
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="resume.html">Resume</a></li>
+                    <li><a href="project.html">Project</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                  </ul>
+                <!--    
+                  <form class="navbar-form navbar-right">
+                    <div class="form-group">
+                      <input type="text" class="form-control" placeholder="Search">
+                    </div>
+                    <button type="submit" class="btn btn-default">Go</button>
+                  </form>
+                -->
+                </div><!-- /.navbar-collapse -->
+              </div><!-- /.container-fluid -->
+            </nav>
+        </header>
+
+    <div id="content">
+
+      Voice:
+
+      <select id="voiceSelected">
+        <option value="Ivy">Ivy [English - American]</option>
+        <option value="Joanna">Joanna [English - American]</option>
+        <option value="Joey">Joey [English - American]</option>
+        <option value="Justin">Justin [English - American]</option>
+        <option value="Kendra">Kendra [English - American]</option> 
+        <option value="Kimberly">Kimberly [English - American]</option>
+        <option value="Salli">Salli [English - American]</option>
+        <option value="Nicole">Nicole [English - Australian]</option>
+        <option value="Russell">Russell [English - Australian]</option>
+        <option value="Emma">Emma [English - British]</option>
+        <option value="Brian">Brian [English - British]</option>
+        <option value="Amy">Amy [English - British]</option>
+        <option value="Raveena">Raveena [English - Indian]</option>        
+        <option value="Geraint">Geraint [English - Welsh]</option>
+        <option value="Ricardo">Ricardo [Brazilian Portuguese]</option>
+        <option value="Vitoria">Vitoria [Brazilian Portuguese]</option>
+        <option value="Lotte">Lotte [Dutch]</option>
+        <option value="Ruben">Ruben [Dutch]</option>
+        <option value="Mathieu">Mathieu [French]</option>
+        <option value="Celine">Celine [French]</option>
+        <option value="Chantal">Chantal [Canadian French]</option>
+        <option value="Marlene">Marlene [German]</option>
+    	<option value="Dora">Dora [Icelandic]</option>
+    	<option value="Karl">Karl [Icelandic]</option>
+        <option value="Carla">Carla [Italian]</option>
+        <option value="Giorgio">Giorgio [Italian]</option>
+        <option value="Mizuki">Mizuki [Japanese]</option>
+        <option value="Liv">Liv [Norwegian]</option>
+        <option value="Maja">Maja [Polish]</option>
+        <option value="Jan">Jan [Polish]</option>
+    	<option value="Ewa">Ewa [Polish]</option>
+    	<option value="Cristiano">Cristiano [Portuquese]</option>
+        <option value="Ines">Ines [Portuquese]</option>
+        <option value="Carmen">Carmen [Romanian]</option>
+        <option value="Maxim">Maxim [Russian]</option>
+        <option value="Tatyana">Tatyana [Russian]</option>
+        <option value="Enrique">Enrique [Spanish]</option>
+        <option value="Penelope">Penelope [US Spanish]</option>
+        <option value="Enrique">Miguel [US Spanish]</option>
+        <option value="Conchita">Conchita [Castilian Spanish]</option>
+        <option value="Astrid">Astrid [Swedish]</option>
+        <option value="Filiz">Filiz [Turkish]</option>
+        <option value="Gwyneth">Gwyneth [Welsh]</option>
+
+        
+      </select>
+
+      <input type="submit" value="Say it!" id="sayButton" class="buttons">
+
+      <span id="postIDreturned"></span>
+    </br></br>
+
+    <textarea id ="postText"></textarea>
+    <span id="charCounter">Characters: 0</span>
+
+    </br></br></br></br>
+      Provide post ID which you want to retrieve: <input type="text" id="postId"> <input type="submit" class="buttons" value="Search" id="searchButton">
+      <br/>
+    </div>
+
+
+
+      <table id="posts">
+        <colgroup>
+          <col style="width:10%">
+          <col style="width:7%">
+          <col style="width:45%">
+          <col style="width:8%">
+          <col style="width:30%">
+        </colgroup>
+        <tbody>
+          <tr>
+            <th>Post ID</th>
+            <th>Voice</th>
+            <th>Post</th>
+            <th>Status</th>
+            <th>Player</th>
+          </tr>
+        </tbody>
+      </table>
+
+    <footer class="footer navbar-fixed-bottom">
+        <div class="container text-center">
+            <ul class="list-inline list-unstyled"><strong>Follow Me!</strong>
+            <li><a href="https://www.facebook.com/quanh.hoang"><i class="fa fa-facebook"></i></a></li>
+            <li><a href="https://www.linkedin.com/in/quang-anh-qa-hoang-0630a077/"><i class="fa fa-linkedin"></i></a></li>
+            <li><a href="https://www.instagram.com/quanh317/?hl=en"><i class="fa fa-instagram"></i></a></li>
+            </ul>
+        </div><!--End container-->
+    </footer><!--End footer 2-->
+
+    <script src="scripts.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.0/jquery.min.js"></script>
+    <script type="text/javascript" src="js/jquery-3.1.1.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  </body>
+</html>
